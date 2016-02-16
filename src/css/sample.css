@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background: #ECEFF1;
+  font-family: Roboto;
+}
+
+header{
+  background: #ECEFF1;
+}
+
+#header {
+  background: #09314B;
+  height: 56px;
+  color: #FFF;
+}
+#header .mask {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 0;
+}
+#header .icon-btn {
+  font-size: 24px;
+  margin: 16px 12px;
+  position: relative;
+  -webkit-transform: translateZ(0);
+}
+#header .menu-btn {
+  margin: 4px;
+  height: 48px;
+  width: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+#header .title {
+  font-size: 16px;
+  line-height: 56px;
+  float: left;
+  margin-left: 5px;
+}
+#header a {
+  text-decoration: none;
+  color: #FFF;
+}
+#header a:after {
+  content: ".";
+  text-indent: -99999px;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  margin-top: -24px;
+  margin-left: -24px;
+  -webkit-transition: background 0.3s linear;
+}
+#header a:active:after {
+  background: rgba(255, 255, 255, 0.1);
+}
+#header .title-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding: 0 15px;
+}
+
+#header i{
+  height: 56px;
+  width: 56px;
+  line-height: 56px !important;
+  text-align: center;
+  color: #FFF;
+  float: left;
+  cursor: pointer;
+}
+
+#tabs {
+  background: #09314B;
+}
+
+#tabs #stla-line {
+  background-color: #03A9F4;
+}
+
+#content, .content {
+  background: #fff;
+  cursor: -webkit-grab;
+}
+
+#content:active, .content:active {
+  cursor: -webkit-grabbing;
+}
+
+#content.content-padding, .content.content-padding {
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.tab-content{
+  padding: 10px;
+}
