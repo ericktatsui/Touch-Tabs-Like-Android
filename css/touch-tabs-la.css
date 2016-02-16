@@ -1,17 +1,17 @@
-#tabs {
+.ttla-tabs {
     height: 48px;
     position: relative;
     background: #09314B;
 }
 
-    #tabs ul {
+    .ttla-tabs ul {
         margin: 0;
         padding: 0;
         list-style: none;
         font-family: arial;
     }
 
-        #tabs ul li {
+        .ttla-tabs ul li {
             color: #fff;
             float: left;
             text-align: center;
@@ -22,12 +22,12 @@
             cursor: pointer;
         }
 
-            #tabs ul li a {
+            .ttla-tabs ul li a {
                 color: #FFF;
                 text-decoration: none;
             }
 
-    #tabs #stla-line {
+    .ttla-tabs #stla-line {
         background-color: #03A9F4;
         height: 2px;
         position: absolute;
@@ -35,20 +35,20 @@
         left: 0;
     }
 
-#container{
+.ttla-container{
     overflow: hidden;
     width: 100%;
     position: absolute;
 }
 
-#content {
+.ttla-content {
     width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.tab-content {
+.ttla-content .tab-content {
     box-sizing: border-box;
     position: absolute;
     top: 0;

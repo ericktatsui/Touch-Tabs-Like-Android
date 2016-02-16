@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  background: #FFF;
+  font-family: Roboto;
+}
+
+header{
+  background: #00695C;
+}
+
+#background-image{
+  z-index: -1 !important;
+}
+
+#header {
+  background: #00695C;
+  height: 56px;
+  color: #FFF;
+  position: relative;
+  z-index: 2;
+}
+#header .mask {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 0;
+}
+#header .icon-btn {
+  font-size: 24px;
+  margin: 16px 12px;
+  position: relative;
+  -webkit-transform: translateZ(0);
+}
+#header .menu-btn {
+  margin: 4px;
+  height: 48px;
+  width: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+#header .title {
+  font-size: 15px;
+  line-height: 56px;
+  float: left;
+  margin-left: 5px;
+  font-weight: 400;
+}
+#header a {
+  text-decoration: none;
+  color: #FFF;
+}
+#header a:after {
+  content: ".";
+  text-indent: -99999px;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  margin-top: -24px;
+  margin-left: -24px;
+  -webkit-transition: background 0.3s linear;
+}
+#header a:active:after {
+  background: rgba(255, 255, 255, 0.1);
+}
+#header .title-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding: 0 15px;
+}
+
+#header i{
+  height: 56px;
+  width: 56px;
+  line-height: 56px !important;
+  text-align: center;
+  color: #FFF;
+  float: left;
+  cursor: pointer;
+}
+
+#tabs {
+  background: #00695C;
+  box-shadow: 0 0 5px #000;
+  z-index: 1;
+}
+
+#tabs #stla-line {
+  background-color: #FFF;
+}
+
+#tabs ul li{
+  font-size: 11px;
+}
+
+#ttla-content, .ttla-content {
+  background: #fff;
+  font-size: 12px;
+  cursor: -webkit-grab;
+}
+
+#ttla-content:active, .ttla-content:active {
+  cursor: -webkit-grabbing;
+}
+
+#ttla-content.ttla-content-padding, .ttla-content.content-padding {
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.tab-content{
+  padding: 10px;
+}
+
+.mockup{
+  width: 298px;
+  height: 587px;
+  padding: 46px 24px;
+  background-image: url(../assets/nexus5-mockup.png);
+  background-size: 100%;
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  margin-left: -149px;
+  top: 50%;
+  margin-top: -293.5px;
+}
+
+#parent{
+  position: relative;
+  width: 254px;
+  height: 449px;
+  overflow: hidden;
+}
+
+.container{
+  max-width: 1000px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+.container .col{
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.container .col.text{
+  height: 230px;
+  top: 50%;
+  margin-top: -115px;
+  color: #FFF;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 50px;
+  font-weight: inherit;
+  margin: 0;
+  line-height: 1.2em;
+}
+
+.container h2 {
+  font-size: 30px;
+  font-weight: inherit;
+  margin: 0 0 20px 0;
+}
+
+.container p {
+  font-size:18px;
+  font-weight: inherit;
+  margin: 0;
+  line-height: 1.2em;
+}
+
+.container .buttons {
+  margin-top: 30px;
+}
+
+.container .buttons a {
+  text-decoration: none;
+  border: 1px solid #FFF;
+  padding: 10px 16px;
+  border-radius: 4px;
+  margin: 5px;
+  color: #FFF;
+  line-height: 51px;
+}
+
+.container .buttons a:hover {
+  background: #FFF;
+  color: #000;
+}
+
+@media screen and (max-width: 1100px){
+  .container .col{
+    width: 100%;
+    float: none;
+  }
+
+  .container .col.text{
+    top: 0;
+    margin: 100px 0 50px 0;
+  }
+
+  .mockup{
+    margin-top: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .container .col.text{
+    margin: 50px 0 50px 0;
+    height: 300px;
+  }
+}
